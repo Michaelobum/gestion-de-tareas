@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "updatedAt": "2026-04-10T03:52:06.650Z",
+  "categories": [
+    "Coactiva"
+  ],
+  "tasks": [
+    {
+      "id": "bad01853-b954-473d-bcc2-37ede0afbc07",
+      "title": "prueba de 1 hora",
+      "description": "prueba",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Coactiva",
+      "status": "Nueva",
+      "createdAt": "2026-04-10T03:52:06.650Z",
+      "dueDate": "2026-04-10T04:20:00.000Z",
+      "reminderMinutes": 30,
+      "reminderSent": false
+    },
+    {
+      "id": "38631b21-dda8-4863-beed-9911607a3e8d",
+      "title": "prueba",
+      "description": "Tarea para probar el sistema de correos",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Coactiva",
+      "status": "Nueva",
+      "createdAt": "2026-04-10T03:48:41.610Z",
+      "dueDate": "2026-04-10T04:42:00.000Z",
+      "reminderMinutes": 15,
+      "reminderSent": false
+    }
+  ]
+}
