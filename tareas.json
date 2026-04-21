@@ -1,35 +1,950 @@
 {
   "version": 2,
-  "updatedAt": "2026-04-10T03:52:06.650Z",
+  "updatedAt": "2026-04-20T21:51:19.698Z",
   "categories": [
-    "Coactiva"
+    "Coactiva",
+    "Edificaciones"
   ],
   "tasks": [
     {
-      "id": "bad01853-b954-473d-bcc2-37ede0afbc07",
-      "title": "prueba de 1 hora",
-      "description": "prueba",
+      "id": "c218afd7-bf29-46d8-8b76-9470c1403439",
+      "title": "Levantar fondos",
+      "description": "con un botón ok levantar los fondos de esa cuenta y marcarla como que ya se levantaron se envía una notificación al ciudadano",
       "type": "Feat",
       "priority": "Normal",
       "category": "Coactiva",
-      "status": "Nueva",
-      "createdAt": "2026-04-10T03:52:06.650Z",
-      "dueDate": "2026-04-10T04:20:00.000Z",
-      "reminderMinutes": 30,
-      "reminderSent": false
+      "status": "En proceso",
+      "createdAt": "2026-04-16T17:44:30.073Z"
     },
     {
-      "id": "38631b21-dda8-4863-beed-9911607a3e8d",
-      "title": "prueba",
-      "description": "Tarea para probar el sistema de correos",
+      "id": "ac7224fd-3b19-4f24-896e-5a891773b6da",
+      "title": "Generar costas",
+      "description": "agregar campo de funcionario al registro de costas y observaciones colcoarlas como requerido, también el banco y las observaciones \ny generar la providencia de delegación y de aceptación",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "Terminada",
+      "createdAt": "2026-04-16T17:39:17.179Z"
+    },
+    {
+      "id": "12230ba2-de49-4f53-8fd9-c873d954153a",
+      "title": "levantamiento",
+      "description": "generar con estado C",
       "type": "Feat",
       "priority": "Normal",
       "category": "Coactiva",
       "status": "Nueva",
-      "createdAt": "2026-04-10T03:48:41.610Z",
-      "dueDate": "2026-04-10T04:42:00.000Z",
-      "reminderMinutes": 15,
-      "reminderSent": false
+      "createdAt": "2026-04-16T17:33:19.693Z"
+    },
+    {
+      "id": "d0c83485-515a-4534-a915-f6672fa63ec4",
+      "title": "Consultar a Allison",
+      "description": "que sucede si el pago es parcial,\nse debe cambiar el estado a O - por dictarse medidas\nCuando el pago es completo se cambia el estado a C - cancelado",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "Terminada",
+      "createdAt": "2026-04-16T17:11:18.146Z"
+    },
+    {
+      "id": "416c91cd-9be4-4d3e-aa3a-b24ac72c1c66",
+      "title": "Embargo",
+      "description": "agregar lwc para que el usuario agregue el valor que se va a embargar, genera el memorandum a tesorería y la providencia a tesorería, notificar a cada juzgado que se generó el memorandum, se envía la notificación a cada juzgado según corresponda y se actualice el estado de nuevo a",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "Nueva",
+      "createdAt": "2026-04-16T17:05:38.256Z"
+    },
+    {
+      "id": "775baa4e-9f50-403d-9980-3b8638604b14",
+      "title": "Providencia de embargo",
+      "description": "agregar filtro para que no aparezcan los juicios que estén es estado de NO CITADOS\nAgregar consulta a EMAS para verificar si ya pagó, en caso de que ya haya pagado cambiar el estado a Cancelado\nCuando EMA devuelve el OK en la actualización de estado, realizar el consumo del api para cambiar la opción de bloqueo de pago",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "Nueva",
+      "createdAt": "2026-04-16T15:57:16.535Z"
+    },
+    {
+      "id": "3bce9969-e350-4211-af7e-80b2ead218c2",
+      "title": "Auto pago y boleta",
+      "description": "desarrollar la subida de documentos para auto pago, y que se cambie el estado a citado. y el estado general se cambia a por dictarse medidas \"O\"",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "Terminada",
+      "createdAt": "2026-04-16T15:22:42.374Z"
+    },
+    {
+      "id": "f8f6c4b2-4b1c-49eb-ae4d-467e9e5feabd",
+      "title": "Providencia de retención",
+      "description": "agregar filtro para que no aparezca el juicio se pagó antes de los 3 días si no es tributario y 20 días si es tributario",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Coactiva",
+      "status": "Nueva",
+      "createdAt": "2026-04-16T15:11:32.543Z"
+    },
+    {
+      "id": "34802af4-3d4b-4999-977b-677e217f069f",
+      "title": "Providencia de auto pago y boleta",
+      "description": "tiene que generarse junto al auto pago y boleta",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Coactiva",
+      "status": "Nueva",
+      "createdAt": "2026-04-16T15:02:06.607Z"
+    },
+    {
+      "id": "dd114462-cd07-42de-8808-4c610642dd16",
+      "title": "Costas",
+      "description": "hacer que se calcule automáticamente en base a la tabla enviada por Jennifer,  se calcula en base al valor de la deuda.",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "Nueva",
+      "createdAt": "2026-04-16T14:57:13.951Z"
+    },
+    {
+      "id": "d4040156-67c4-4897-9e63-2d7770ad5314",
+      "title": "Validar",
+      "description": "Tiene que existir una tabla de Pre-juicios con todos los títulos de créditos que llegan de rentas para poder mapear los que si se van a convertir en juicios  (Número de solicitud es el ID), así vengan con número de juicios desde el EMAS se tiene que filtrar y no convertirse en juicios en salesforce si no tienen los datos completos como por ejemplo la cedula, nombre o si es una empresa publica o del mismo municipio \nConvenio de pago si o no? \nya tienes mapeado el sorteo completo?\ndepuración de datos de cedula del contribuyente, se hace para que las cedulas ingresadas con 9 dígitos se le agregue el  al inicio para que cumpla con la estructura de cedula ecuatoriana o RUC si tiene 12 dígitos se le agrega el 0 al inicio también\ngenerar los rechazados por el tipo de novedad, se genera una notificación con los rechazados y enviar a catastro el listado para que lo actualice\npara crear el juicio tienen que tener juez, secretario, director, auxiliar y número\nlos juicios menores a 20 tienen que permitirse descargar en un excel para enviarlos a gaceta\nConsultar sobre la emisión de Excel de anexo Formato a super intendencia de bancos y anexo formatos seps\nCrear campo para número de trámite que devuelve la super  y la seps\nDocumento en excel generado por CRM de la providencia de embargo, se tiene que validar que si o si sean los mismo juicios generados en la providencia de embargo\nAgregar nuevo campo para monto total embargado\nValidar si tiene creado el cuadro de validar si se quiere inactivar el juicio o no\nConsultar la acumulación de juicios",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "En proceso",
+      "createdAt": "2026-04-16T14:45:16.447Z"
+    },
+    {
+      "id": "c64fe6f5-16cd-4284-a9e9-7fd74543aba9",
+      "title": "Formulario ciudadano",
+      "description": "cambiar color amarillo por el que se encuentra en línea gráfica (Daniela ya te lo envió por ws)",
+      "type": "Feat",
+      "priority": "Puede esperar",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2026-04-15T19:23:03.205Z"
+    },
+    {
+      "id": "355c3f7a-b65d-4be9-b1b1-626c3dfb9f2d",
+      "title": "Oma",
+      "description": "fecha de inicio y fecha fin cambiar formato responsivo en desktop",
+      "type": "Feat",
+      "priority": "Puede esperar",
+      "category": "Edificaciones",
+      "status": "Nueva",
+      "createdAt": "2026-04-15T19:22:24.569Z"
+    },
+    {
+      "id": "d319f310-2926-4f3a-8ca5-a42b95bf30f9",
+      "title": "Validación Jurídica",
+      "description": "validación aplica en todos los tramites",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Edificaciones",
+      "status": "Nueva",
+      "createdAt": "2026-04-14T15:45:25.971Z"
+    },
+    {
+      "id": "08d0672f-d239-4e5f-8c1b-69a7170c8abe",
+      "title": "Inaplicabilidad de normas de Edificación",
+      "description": "validar que no se pueda ingresar más del número de predios totales para cada manzana en el objeto de inspecciones",
+      "type": "Fix",
+      "priority": "Normal",
+      "category": "Edificaciones",
+      "status": "Nueva",
+      "createdAt": "2026-04-14T15:26:10.420Z"
+    },
+    {
+      "id": "cdeefd0d-7939-49b7-9437-1d1f626ad891",
+      "title": "DUMCE",
+      "description": "Agregar nomenclatura para todos los documentos de edificaciones, dada por correo por Roberto con el asunto de: Solicitud de nomenclaturas utilizadas por las áreas de DUMCE",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Edificaciones",
+      "status": "Nueva",
+      "createdAt": "2026-04-13T13:53:39.182Z"
+    },
+    {
+      "id": "b94f19e4-9c01-4c9a-bedc-eababbe25dd2",
+      "title": "Quitar permisos administrativos",
+      "description": "al parecer en los desarrollos de trámites de edificaciones están pudiendo con cualquier usuario editar y eliminar registros, lo cual no debería ser, tengo que ver la manera de impedir que eso suceda",
+      "type": "Fix",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "Nueva",
+      "createdAt": "2026-04-10T20:08:16.239Z"
+    },
+    {
+      "id": "bfccbc9e-bdbc-4918-a599-bf38ddd0b8d0",
+      "title": "Gaceta municipal",
+      "description": "todo juicio o titulo de crédito que sea hasta 19.99$ se va a incluir en el listado para publicar en gaceta municipal",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "Nueva",
+      "createdAt": "2026-04-09T20:18:15.150Z"
+    },
+    {
+      "id": "876b10b1-3494-45a9-b5b8-9af24c02bcfe",
+      "title": "Propiedad horizontal Declaratoria",
+      "description": "Armar acordeón en la sección de alicuotas en el trámite de propiedad horizontal",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2026-03-31T19:51:40.102Z"
+    },
+    {
+      "id": "299a0ea6-8a09-405e-b0e2-a02faee39f78",
+      "title": "Generación de pages",
+      "description": "Hechos:\nOficio de demolición\nOficio a catastro\nOficio inaplicabilidad \nFaltantes:\nEl resto de documentos jeje",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2026-03-18T20:52:46.270Z"
+    },
+    {
+      "id": "b4a48641-8d86-4b1c-ab5f-5d58c85db0f5",
+      "title": "Consulta funcional",
+      "description": "validar la opción de agregar un filtro de búsqueda por juzgado, cedula, contribuyente en la pantalla de todos los juicios",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "Terminada",
+      "createdAt": "2026-03-16T19:33:41.234Z"
+    },
+    {
+      "id": "f50f14cf-8aca-4322-b2eb-0c3de94fe6e4",
+      "title": "Filtros para coactiva",
+      "description": "cancelado por pagar para el filtro de providencia de levantamiento",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "En proceso",
+      "createdAt": "2026-03-09T20:03:28.488Z"
+    },
+    {
+      "id": "b95399b9-3738-4593-91c8-3eba6269c7ce",
+      "title": "Notificación por correo",
+      "description": "Notificar al juez y al secretario por correo la generación de la preview de la providencia",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Coactiva",
+      "status": "Terminada",
+      "createdAt": "2026-03-09T19:57:06.829Z"
+    },
+    {
+      "id": "d7f13203-72c2-4fa8-a073-2b2b6f5b216a",
+      "title": "Firmas para Providencias",
+      "description": "Validar con Roberto laposibilidad de crear una nueva ventana en la sección de providencia para que el flujo sea (Directo genera el preview - secretario revisa el preview y  lo firma para luego ser enviado al juez y que sea firmado por última vez)",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "Terminada",
+      "createdAt": "2026-03-09T19:55:36.450Z"
+    },
+    {
+      "id": "f5fc4c5a-b7f7-4243-b75b-1e6a6294edfc",
+      "title": "Insertar datos en Edificaicones",
+      "description": "avalúo de solar y área de solar que las obtengo de catastros las tengo que insertar en el trámite de edificaciones",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2026-03-06T19:46:14.438Z"
+    },
+    {
+      "id": "cda809d7-f018-45e6-8107-636fbf0742bc",
+      "title": "Api masiva",
+      "description": "editar api masiva para el envío de más de 6k de registros en un solo query",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Coactiva",
+      "status": "Terminada",
+      "createdAt": "2026-03-05T21:53:39.555Z"
+    },
+    {
+      "id": "bdd6eb1b-1a9b-4602-b94a-ab1c9b540c8e",
+      "title": "Coactiva",
+      "description": "Crear objetos interceptores para la carga masiva de juicios mediante un servicio de api",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Coactiva",
+      "status": "Terminada",
+      "createdAt": "2026-03-05T19:50:24.109Z"
+    },
+    {
+      "id": "60b04b4b-6ed7-4b54-913f-1790d29857da",
+      "title": "Aviso de remodelación de obras internas OMA",
+      "description": "Si el trámite ingresa como urgente se debe generar automáticamente el certificado, activar el proceso de aprobación y cierre directo de trámite",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2026-03-05T14:27:25.819Z"
+    },
+    {
+      "id": "67b67d3f-6974-4e4f-8646-47788ede13c4",
+      "title": "Aviso de remodelación de obras internas OMA",
+      "description": "Adicionar en formulario campo “BC_MotivoRemodelacion__c” picklist y si seleccionan “Daños por accidente” o “Daños por fenómenos naturales” se activa automáticamente al guardar el trámite un proceso de aprobación ya que se considera urgente",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2026-03-05T14:26:54.195Z"
+    },
+    {
+      "id": "52d49d8b-ce90-4be8-8134-75322191efa0",
+      "title": "Aviso de remodelación de obras internas OMA",
+      "description": "Cuando se traiga si un predio es patrimonial o no, a parte de ingresarlo en el Catastro también se debe ingresar en el Trámite en el campo picklist (SI, NO) BC_EsPredioPatrimonial__c",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Edificaciones",
+      "status": "En proceso",
+      "createdAt": "2026-03-05T14:26:12.363Z"
+    },
+    {
+      "id": "cec2bfde-3ebf-45af-b7a8-239c4065a248",
+      "title": "Aviso de remodelación de obras internas OMA",
+      "description": "Adicionar en formulario campo “BCSubtipoDeTramite_c” para OMA y si el usuario selecciona obra menor aumento debes verificar si el aumento supera los 40 mtrs2 (BC_AumentoMtrs_c), en caso supere debes lanzar mensaje de que no procede porque eso es un permiso de construcción (no permite guardar el tramite)",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2026-03-05T14:25:31.459Z"
+    },
+    {
+      "id": "9c643736-8889-4ff8-92bd-d35e8ff04b17",
+      "title": "Aviso de remodelación de obras internas OMA",
+      "description": "Revisar si la integración trae si el predio tiene registro de construcción activo.",
+      "type": "Test",
+      "priority": "Puede esperar",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2026-03-05T14:24:57.220Z"
+    },
+    {
+      "id": "51d8f01c-4de1-48a7-96a1-c92a942af0e8",
+      "title": "Cuenta Bancaria",
+      "description": "Agregar campos de cuentas bancarias en la tabla de providencia de embargo",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Coactiva",
+      "status": "Terminada",
+      "createdAt": "2026-03-04T15:59:33.178Z"
+    },
+    {
+      "id": "2bbb0ba9-a902-429e-804c-2bf386fdaa43",
+      "title": "Fix: coactiva",
+      "description": "validar hasta cuantos registros puede soportar el api, así mismo el peso máximo para la solicitud",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "Terminada",
+      "createdAt": "2026-03-03T16:01:00.166Z"
+    },
+    {
+      "id": "1215184d-565e-4556-bf59-a887c2525e7d",
+      "title": "Feat: api de pruebas",
+      "description": "realizar modificación de api para que permita ingreso de datos masivos",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-03-03T15:42:38.678Z"
+    },
+    {
+      "id": "a444ddf1-1e96-4cba-a04b-799a8b3acc5e",
+      "title": "Feat: coactiva",
+      "description": "Cambio: \nmodal para escoger los juicios que se encuentran con bandera marcada como False, una vez seleccionado el trámite y guardado la bandera cambia a True y ya no se muestra cuando abran el modal para seleccionar los juicios\n\nAgregar el nombre cuando se emite el comprobante ejemplo: providencia_númerorandom\n\nAgregar el nombre del trámite que se está seleccionando y el nombre que se está generando ejemplo providencia_nombrearchivo.pdf\n\nlos datos mostrados en la tabla cuando se abre el modal son los siguientes:\nNumero de juicio\ncoactivado\nIdentificación \nConcepto de\nvalor",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "Terminada",
+      "createdAt": "2026-03-02T21:11:20.741Z"
+    },
+    {
+      "id": "24f254d3-a252-4b1b-a31a-9b5d9dd14cf2",
+      "title": "Feat: oactiva",
+      "description": "validar si tiene cuenta en el portal ciudadano, si tiene cuenta el sistema lo validará como firma electrónica, caso contrario será firma manual",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "Terminada",
+      "createdAt": "2026-03-02T17:13:14.231Z"
+    },
+    {
+      "id": "35e19939-9d21-4c15-9748-fddb97678e4f",
+      "title": "Acta",
+      "description": "generar acta de reunión",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2026-02-27T14:39:10.876Z"
+    },
+    {
+      "id": "17536ec1-733e-4fbe-86c9-f05922f73769",
+      "title": "Fix: coactiva",
+      "description": "Agregar correo electrónico al formato de oficio de la super",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "Terminada",
+      "createdAt": "2026-02-26T19:29:49.799Z"
+    },
+    {
+      "id": "6d974636-08af-495c-8dc1-4c25c80443a5",
+      "title": "Fix: Coactiva",
+      "description": "Gnerar oficioo para la Cep e implementar las apis de coactiva",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "Terminada",
+      "createdAt": "2026-02-25T22:03:06.062Z"
+    },
+    {
+      "id": "0fedbc5e-8ece-40c4-ab18-9c31b624bf8c",
+      "title": "Fix:Coactiva",
+      "description": "Implementación de nuevo formato de providencias",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "Terminada",
+      "createdAt": "2026-02-25T21:03:41.912Z"
+    },
+    {
+      "id": "40e1c1fc-31ca-4515-9632-4164befc7ab6",
+      "title": "Feat: 181 responde",
+      "description": "crear un nuevo tab para salesforce",
+      "type": "Feat",
+      "priority": "Puede esperar",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-02-20T22:01:26.769Z"
+    },
+    {
+      "id": "ae13dc4a-50b7-4901-847d-3f5bec17394a",
+      "title": "Coactiva",
+      "description": "Creación de pdf fuera de la línea",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-02-10T13:53:17.160Z"
+    },
+    {
+      "id": "685e56e4-2561-4ebf-9588-9d3481c82297",
+      "title": "Feat: Coactiva",
+      "description": "mayor a 20$ genera coactiva  menor a eso no",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Coactiva",
+      "status": "Terminada",
+      "createdAt": "2026-02-09T20:41:41.052Z"
+    },
+    {
+      "id": "4e89d6fb-8eaf-461c-92f9-bed3f5521f07",
+      "title": "Api FASE II",
+      "description": "Crear api para el manejo de documentos para fase 2 pruebas",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "En proceso",
+      "createdAt": "2026-02-03T16:16:53.505Z"
+    },
+    {
+      "id": "247bda4a-24be-4f67-a251-daf4cfe78412",
+      "title": "API de documentos",
+      "description": "Crear api de documentos para fase IV",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-02-03T16:12:37.009Z"
+    },
+    {
+      "id": "8608d589-346c-46cf-87bf-a89bd2a402e4",
+      "title": "Catastro",
+      "description": "Crear credenciales nombradas en salesforce",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-27T17:17:03.715Z"
+    },
+    {
+      "id": "27a43699-f11a-4d52-bb9f-1d28c0e8582d",
+      "title": "Edificaciones",
+      "description": "Integrar api de catastros en edificaciones para consumo de catastros",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-27T14:05:44.771Z"
+    },
+    {
+      "id": "0cc34baf-e591-4864-93d8-c65efc919662",
+      "title": "Portal Ciudadano",
+      "description": "integrar una nueva ventana para que el usuario pueda visualizar los trámites que tiene en otros portales",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-26T19:59:15.725Z"
+    },
+    {
+      "id": "f65530ef-4bb7-4a0e-8415-9dbace28c202",
+      "title": "Coactiva",
+      "description": "Pedir que se creen los campos de deuda en catastro",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Coactiva",
+      "status": "Terminada",
+      "createdAt": "2026-01-26T19:30:58.871Z"
+    },
+    {
+      "id": "076be666-685e-4eaa-87bb-7c40b7becb56",
+      "title": "Coactiva",
+      "description": "revisar nuevo objeto creado por Roberto",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-22T21:55:27.044Z"
+    },
+    {
+      "id": "8824d48c-6250-4e30-ad91-6bdc41b3aab4",
+      "title": "Feat: Solicitud de Concesión Onerosa",
+      "description": "Agregar validación para letras que no se puedan agregar en el campo númerico de área de construcción y área no computable, que no permita número negativos",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-22T17:14:00.958Z"
+    },
+    {
+      "id": "a5fc1ba5-579c-4c2d-b707-c3c43f7054f1",
+      "title": "Subsanación",
+      "description": "Agregar imágenes y cambiar tipo de datos ingresados",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-20T17:43:44.701Z"
+    },
+    {
+      "id": "01fb2f65-6084-4b73-8677-7aedfce551c4",
+      "title": "Feat: Solicitud de Demolición Voluntaria",
+      "description": "Enviar al back la fecha de inicio y la fecha final de demolición para guardarla en salesforce",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2026-01-19T21:58:05.047Z"
+    },
+    {
+      "id": "b6926597-0343-4d2e-8df4-22803d2976e0",
+      "title": "Fix: Propiedad Horizontal Declaratoria/modificatoria",
+      "description": "Enviar al back el número de pisos y el campo de subsuelos para guardarlos en salesforce",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2026-01-19T21:56:33.544Z"
+    },
+    {
+      "id": "110868c8-6c8e-48ea-92e9-a6b0a10900b9",
+      "title": "Feat: Propiedad Horizontal Revocatoria",
+      "description": "Enviar al back la validación de la hipoteca para que se guarde en un campo de \"Hpoteca\" como True o Flase",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2026-01-19T21:54:33.304Z"
+    },
+    {
+      "id": "3194ea7f-6326-409f-acd4-748bec919006",
+      "title": "Fix: Tramite Aviso por Remodelaciones Internas Obra Menor",
+      "description": "Solventar error al subir archivo dwg o archivo grande",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2026-01-14T19:59:52.165Z"
+    },
+    {
+      "id": "1c88c87a-2a8a-4efe-bff7-799553019903",
+      "title": "Feat: Tramite Aviso por Remodelaciones Internas Obra Menor",
+      "description": "Cuando sea mayo a 40 nmetros cuadrados y sea tipo de obra por aumento o (OMA) y el plano validar que no aparezca cuando es por remodelación y sea obligatorio cuando es aumento.",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-14T19:59:28.983Z"
+    },
+    {
+      "id": "3a9c4c33-409c-4cbc-a408-4ee17f21efa9",
+      "title": "Feat: Propiedad Horizontal Revocatoria",
+      "description": "\"Validación de hipoteca: El proveedor debe añadir una opción (tipo check o casilla) de \n\"\"Presenta hipoteca\"\". Si el usuario marca esta opción, el sistema debe habilitar \nobligatoriamente el campo para la \"\"Carta de anuencia\"\"\"",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-12T21:40:02.314Z"
+    },
+    {
+      "id": "f159be9c-c621-49ea-970d-5d569fa6b507",
+      "title": "Fix: Propiedad Horizontal Declaratoria/modificatoria",
+      "description": "Agregar validación para que si escoge la opción en alícuotas de si es útil, ya no puede ser privada en la misma línea, tiene que ser una u otra",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-09T15:55:01.753Z"
+    },
+    {
+      "id": "7cf92c31-8e48-4561-979e-784647267efb",
+      "title": "Fix: Propiedad Horizontal Declaratoria/modificatoria",
+      "description": "Agregar validación para que cuando escoja por ejemplo: Selct  Util solo le permita ingresar metros cuadrados de área útil  así mismo cuando escoja área común y área privativa, solo le permita ingresar aquellos datos",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-08T21:58:45.387Z"
+    },
+    {
+      "id": "dcb7ef93-58a3-4ac8-9363-44a4a75b5898",
+      "title": "Fix: Propiedad Horizontal Declaratoria/modificatoria",
+      "description": "Implementar lineros y mesuras - revisar excel",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-08T21:56:50.972Z"
+    },
+    {
+      "id": "b5690797-8e52-45fc-b1ae-0e9a08b2f399",
+      "title": "Fix: Eificaciones",
+      "description": "implementar rural y urbano para cada trámite",
+      "type": "Feat",
+      "priority": "Puede esperar",
+      "category": "",
+      "status": "Nueva",
+      "createdAt": "2026-01-08T21:43:07.038Z"
+    },
+    {
+      "id": "d4e93427-f173-414e-b5ec-f81044b406a7",
+      "title": "Fix: Formularios",
+      "description": "Agregar el nombre correcto a los archivos del requisito que se está subiendo",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-08T16:31:51.010Z"
+    },
+    {
+      "id": "75629eba-3fcd-4e1f-9efb-09118248e35a",
+      "title": "Fix: Propiedad Horizontal Declaratoria/modificatoria",
+      "description": "Agregar un recuadro para que el usuario escoja el número de pisos que va a tener una alicuota y sobre eso escoja el número de alicuotas que va a seleccionar en la tabla de alicuotas",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-08T16:08:37.732Z"
+    },
+    {
+      "id": "89bfb6d5-563c-4f1b-9e9d-7487c4ed00d1",
+      "title": "Feat: Propiedad Horizontal Declaratoria/modificatoria",
+      "description": "Agregar nuevo campo de Área Común a alícuotas",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-07T21:57:43.986Z"
+    },
+    {
+      "id": "8e550a89-f758-4b28-9ae3-2edb1f5c1a7c",
+      "title": "Preguntar a sergio",
+      "description": "si el excel mapea las alicuotas y como lo genera",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-07T20:22:31.659Z"
+    },
+    {
+      "id": "dd0195b8-2a8c-4720-8e6c-fffd315428fb",
+      "title": "Fix: Propiedad Horizontal Declaratoria/modificatoria",
+      "description": "revisar bug en alícuotas al momento de guardar las alícuotas no se están asignando el tipo de uso (Privativo, útiles, comunes) y revisar la duplicidad de la misma variable al momento de guardar",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-07T19:22:56.074Z"
+    },
+    {
+      "id": "a8dc09e1-fc43-481d-a01d-afcf06ba2828",
+      "title": "FEAT: SOLICITUD AVISO POR REMODELACIONES INTERNAS (OMA)",
+      "description": "Se debe incluir el catálogo de los tipos de obra\n(aproximadamente 10 u 11 tipos) una vez que el Municipio la entregue.",
+      "type": "Feat",
+      "priority": "Puede esperar",
+      "category": "",
+      "status": "Nueva",
+      "createdAt": "2026-01-05T21:47:15.058Z"
+    },
+    {
+      "id": "0700ee90-5601-4d96-b14e-bde0e1cb20b7",
+      "title": "Refactor: Edificaciones",
+      "description": "tablas intermedias para catastro y propietario",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-05T21:02:04.502Z"
+    },
+    {
+      "id": "6deaeafe-5933-4705-b0f2-4f6cf3a0cb67",
+      "title": "FEAT: Coactiva",
+      "description": "crear API para que municipio retorne valores",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-05T14:41:05.954Z"
+    },
+    {
+      "id": "b42f4ab1-314d-474b-a2af-d8ed04048eb6",
+      "title": "FEAT: SOLICITUD AVISO POR REMODELACIONES INTERNAS (OMA)",
+      "description": "Hacer obligatoria la carga de una Memoria Técnica si el sistema identifica, mediante el\ncódigo catastral, que el predio es patrimonial.",
+      "type": "Feat",
+      "priority": "Puede esperar",
+      "category": "",
+      "status": "Nueva",
+      "createdAt": "2026-01-05T14:10:08.687Z"
+    },
+    {
+      "id": "baa08b07-1271-48da-97c3-f66d9680bb8b",
+      "title": "FIX: SOLICITUD AVISO POR REMODELACIONES INTERNAS (OMA)",
+      "description": "Agregar un casillero para ingresar el tamaño de la obra en\nmetros cuadrados, el cual solo se activará si el ciudadano selecciona que el tipo de obra es un\n\"aumento\" (hasta un límite de 40 m2).",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2026-01-05T14:08:41.360Z"
+    },
+    {
+      "id": "7e257902-3e7b-46fd-9638-4f53c7d2f925",
+      "title": "Fix: Edificaciones",
+      "description": "cuando el usuario selecciona el tipo de tramite y le da a guardar, guarda así no tenga validado el catastro",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2025-12-30T14:36:41.176Z"
+    },
+    {
+      "id": "db3b265d-2f62-45c1-b438-999fe2529eda",
+      "title": "Fix: tipo de tramite",
+      "description": "al momento de seleccionar y validar un catastro funciona, pero cuando se cambia de catastro no busca nuevamente si hay un tramite existente, por ende no carga los requisitos",
+      "type": "Feat",
+      "priority": "Puede esperar",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2025-12-30T14:00:05.995Z"
+    },
+    {
+      "id": "1d37cb56-035e-4283-949c-a59ff7eb21da",
+      "title": "Feat: coactiva",
+      "description": "revisar la documentación de coactiva y consultar a Jennifer",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2025-12-29T21:59:07.282Z"
+    },
+    {
+      "id": "a2e05d81-4e23-4826-b948-4ebcadf743a5",
+      "title": "Feat: inaplicabilidad de normas de edificación",
+      "description": "agregar tabla del número 17 para el CRM y agregar el calculo de las manzanas que están alrededor",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Edificaciones",
+      "status": "Nueva",
+      "createdAt": "2025-12-29T19:20:20.134Z"
+    },
+    {
+      "id": "fc33b86f-40f6-47a7-a0ff-7152129b53c7",
+      "title": "Feat: Automatizar la notificación a Justicia y Vigilancia cuando un trámite sea negado por indicios de construcción sin permiso.",
+      "description": "",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2025-12-29T18:46:08.688Z"
+    },
+    {
+      "id": "25b85466-a4bd-4106-b767-04ec5f52da2a",
+      "title": "Feat: Solicitud de Concesión Onerosa",
+      "description": "fórmula para que el sistema calcule automáticamente si el excedente solicitado no supera el 40% del CUS permitido.",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2025-12-29T18:45:30.464Z"
+    },
+    {
+      "id": "a17d7976-a326-4303-a276-f26f2f3c281e",
+      "title": "Feat: Solicitud de Concesión Onerosa",
+      "description": "campos obligatorios para Área Final de Construcción, Área No Computable (con ejemplos como piscinas o sótanos) y Número de Unidades de Vivienda.",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2025-12-29T18:44:41.360Z"
+    },
+    {
+      "id": "c5fa177a-4caa-4ed1-a5b6-88537ed63944",
+      "title": "Feat: checkbox Solicitud de Concesión Onerosa",
+      "description": "responsabilidad de datos y protección de la información en cada formulario.",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2025-12-29T18:43:40.016Z"
+    },
+    {
+      "id": "7e943baa-0a07-4940-aa3c-20afcb6220ba",
+      "title": "Fix: Bug tipo de tramite en propiedad horizontal declaratoria",
+      "description": "",
+      "type": "Feat",
+      "priority": "Crítico",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2025-12-29T17:45:09.065Z"
+    },
+    {
+      "id": "bc255587-9c46-4e21-a534-f7409f4df0f6",
+      "title": "Feat: checkbox",
+      "description": "identificar si el predio forma parte del listado de edificaciones afectadas por el evento de 2016",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2025-12-29T17:10:28.347Z"
+    },
+    {
+      "id": "83bc2241-0ce2-4db0-98e7-66b926abb90a",
+      "title": "Feat: cuadro informativo",
+      "description": "indicar al ciudadano que, si la demolición cruza de un año a otro, el impuesto predial se generará completo.",
+      "type": "Feat",
+      "priority": "Puede esperar",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2025-12-29T17:08:40.180Z"
+    },
+    {
+      "id": "8e5ebcc8-65b2-4a35-bf6f-8047386871f8",
+      "title": "Feat: Solicitud de Demolición Voluntaria",
+      "description": "Fecha de inicio y fecha fin de demolición",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2025-12-29T17:07:10.251Z"
+    },
+    {
+      "id": "ce9fbea2-8bc2-4caf-96f9-c9d014685ec5",
+      "title": "Fix: cambiar logos a la nueva versión del municipio",
+      "description": "",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2025-12-29T16:25:18.959Z"
+    },
+    {
+      "id": "c34d35f1-0a9e-4231-b5fb-065749c71f2e",
+      "title": "Fix: cambiar API  ciudadano por la de DINARP",
+      "description": "",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2025-12-29T16:06:18.129Z"
+    },
+    {
+      "id": "906614e2-2bf2-4f63-80a7-141d2c2248b2",
+      "title": "Fix: deshabilitar botón de enviar mientras no tenga todos los requisitos",
+      "description": "",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2025-12-29T16:03:22.209Z"
+    },
+    {
+      "id": "acf0bc20-3d58-404f-a3b9-a9ac9de352f3",
+      "title": "Fix: quitar campos del solicitante y validar que sea el mismo propietario del catastro",
+      "description": "",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "",
+      "status": "En proceso",
+      "createdAt": "2025-12-29T16:01:48.825Z"
+    },
+    {
+      "id": "3bd4b628-3878-4207-a3ef-fb3fc4542fb7",
+      "title": "Fix: Eliminar archivos en adjuntos adicionales",
+      "description": "",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2025-12-29T16:01:04.585Z"
+    },
+    {
+      "id": "b4cbcfb7-f2f6-4f26-8e7f-a9d2f1ae8541",
+      "title": "Feat: Validar que no se envíe formulario con datos del solicitante vacíos",
+      "description": "",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2025-12-29T15:56:41.153Z"
+    },
+    {
+      "id": "284ab218-bd0e-4aa7-b535-7df6d70b96c4",
+      "title": "Fix: Validar que el mismo usuario no pueda subir dos solicitudes del mismo tipo",
+      "description": "",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2025-12-29T15:56:25.993Z"
+    },
+    {
+      "id": "3c9ab1ad-fac8-4d86-b116-955c8b1bdaad",
+      "title": "Feat: validar que tenga menos de 2000m2 el terreno",
+      "description": "",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "",
+      "status": "Terminada",
+      "createdAt": "2025-12-29T15:55:02.881Z"
+    },
+    {
+      "id": "a80ad496-a2ac-4f8d-8138-2d0c57878fa5",
+      "title": "Fix: Tipo trámite al principio del formulario",
+      "description": "",
+      "type": "Feat",
+      "priority": "Normal",
+      "category": "Edificaciones",
+      "status": "Terminada",
+      "createdAt": "2025-12-29T15:54:03.618Z"
     }
   ]
 }
